@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Aggression Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aggression date</th>
+      <th>Aggression time</th>
+      <th>Aggression mechanism</th>
+      <th>Aggression scene</th>
+      <th>Aggression file</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aggression_details.each do |aggression_detail| %>
+      <tr>
+        <td><%= aggression_detail.aggression_date %></td>
+        <td><%= aggression_detail.aggression_time %></td>
+        <td><%= aggression_detail.aggression_mechanism %></td>
+        <td><%= aggression_detail.aggression_scene %></td>
+        <td><%= aggression_detail.aggression_file %></td>
+        <td><%= link_to 'Show', aggression_detail %></td>
+        <td><%= link_to 'Edit', edit_aggression_detail_path(aggression_detail) %></td>
+        <td><%= link_to 'Destroy', aggression_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aggression Detail', new_aggression_detail_path %>

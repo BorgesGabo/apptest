@@ -1,0 +1,42 @@
+<%= form_with(model: aggression_detail, local: true) do |form| %>
+  <% if aggression_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(aggression_detail.errors.count, "error") %> prohibited this aggression_detail from being saved:</h2>
+
+      <ul>
+      <% aggression_detail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :aggression_date %>
+    <%= form.date_select :aggression_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aggression_time %>
+    <%= form.time_select :aggression_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aggression_mechanism %>
+    <%= form.text_area :aggression_mechanism %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aggression_scene %>
+    <%= form.text_area :aggression_scene %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aggression_file %>
+    <%= form.text_area :aggression_file %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

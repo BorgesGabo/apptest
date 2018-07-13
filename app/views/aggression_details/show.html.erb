@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aggression date:</strong>
+  <%= @aggression_detail.aggression_date %>
+</p>
+
+<p>
+  <strong>Aggression time:</strong>
+  <%= @aggression_detail.aggression_time %>
+</p>
+
+<p>
+  <strong>Aggression mechanism:</strong>
+  <%= @aggression_detail.aggression_mechanism %>
+</p>
+
+<p>
+  <strong>Aggression scene:</strong>
+  <%= @aggression_detail.aggression_scene %>
+</p>
+
+<p>
+  <strong>Aggression file:</strong>
+  <%= @aggression_detail.aggression_file %>
+</p>
+
+<%= link_to 'Edit', edit_aggression_detail_path(@aggression_detail) %> |
+<%= link_to 'Back', aggression_details_path %>

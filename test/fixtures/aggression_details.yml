@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aggression_date: 2018-07-12
+  aggression_time: 2018-07-12 18:11:17
+  aggression_mechanism: MyText
+  aggression_scene: MyText
+  aggression_file: MyText
+
+two:
+  aggression_date: 2018-07-12
+  aggression_time: 2018-07-12 18:11:17
+  aggression_mechanism: MyText
+  aggression_scene: MyText
+  aggression_file: MyText

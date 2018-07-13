@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Non sexual violence:</strong>
+  <%= @type_of_aggression.non_sexual_violence %>
+</p>
+
+<p>
+  <strong>Sexual violence:</strong>
+  <%= @type_of_aggression.sexual_violence %>
+</p>
+
+<%= link_to 'Edit', edit_type_of_aggression_path(@type_of_aggression) %> |
+<%= link_to 'Back', type_of_aggressions_path %>

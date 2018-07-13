@@ -1,0 +1,27 @@
+<%= form_with(model: type_of_aggression, local: true) do |form| %>
+  <% if type_of_aggression.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(type_of_aggression.errors.count, "error") %> prohibited this type_of_aggression from being saved:</h2>
+
+      <ul>
+      <% type_of_aggression.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :non_sexual_violence %>
+    <%= form.text_area :non_sexual_violence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexual_violence %>
+    <%= form.text_area :sexual_violence %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

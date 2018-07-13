@@ -1,0 +1,2 @@
+class TypeOfAggression < ApplicationRecord
+end

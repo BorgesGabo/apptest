@@ -1,0 +1,2 @@
+module TypeOfAggressionsHelper
+end
